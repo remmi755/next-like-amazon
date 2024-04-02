@@ -1,31 +1,31 @@
-'use client'
-import useCartService from '@/lib/hooks/useCartStore'
-import useLayoutService from '@/lib/hooks/useLayout'
-import { signIn, signOut, useSession } from 'next-auth/react'
+"use client";
+import useCartService from "@/lib/hooks/useCartStore";
+import useLayoutService from "@/lib/hooks/useLayout";
+import { signIn, signOut, useSession } from "next-auth/react";
 
-import Link from 'next/link'
-import { useEffect, useState } from 'react'
-import { SearchBox } from './SearchBox'
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { SearchBox } from "./SearchBox";
 
 const Menu = () => {
-  const { items, init } = useCartService()
-  const [mounted, setMounted] = useState(false)
+  const { items, init } = useCartService();
+  const [mounted, setMounted] = useState(false);
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
-  const signoutHandler = () => {
-    signOut({ callbackUrl: '/signin' })
-    init()
-  }
+  const signoutHandler = async () => {
+    await signOut({ callbackUrl: "/signin" });
+    init();
+  };
 
-  const { data: session } = useSession()
+  const { data: session } = useSession();
 
-  const { theme, toggleTheme } = useLayoutService()
+  const { theme, toggleTheme } = useLayoutService();
 
   const handleClick = () => {
-    ;(document.activeElement as HTMLElement).blur()
-  }
+    (document.activeElement as HTMLElement).blur();
+  };
 
   return (
     <>
@@ -40,7 +40,7 @@ const Menu = () => {
                 {/* this hidden checkbox controls the state */}
                 <input
                   type="checkbox"
-                  checked={theme === 'light'}
+                  checked={theme === "light"}
                   onChange={toggleTheme}
                 />
 
@@ -69,7 +69,7 @@ const Menu = () => {
               Cart
               {mounted && items.length != 0 && (
                 <div className="badge badge-secondary">
-                  {items.reduce((a, c) => a + c.qty, 0)}{' '}
+                  {items.reduce((a, c) => a + c.qty, 0)}{" "}
                 </div>
               )}
             </Link>
@@ -134,7 +134,7 @@ const Menu = () => {
         </ul>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;

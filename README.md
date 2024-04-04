@@ -2,7 +2,7 @@
 
 ![Image alt](https://github.com/remmi755/next-like-amazon/blob/main/next-like-amazon.vercel.app_.png)
 
-![Image alt](https://github.com/remmi755/tea/blob/master/tea.jpg)
+![Image alt](https://github.com/remmi755/next-like-amazon/blob/main/next-like-amazon.vercel.app_%20(1).png)
 
 ![Image alt](https://github.com/remmi755/tea/blob/master/tea.jpg)
 

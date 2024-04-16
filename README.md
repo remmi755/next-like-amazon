@@ -1,3 +1,13 @@
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=48&pause=1000&random=false&width=500&height=70&lines=Next-like-amazon)](https://git.io/typing-svg)
+
+![Image alt](https://github.com/remmi755/next-like-amazon/blob/main/next-like-amazon.vercel.app_.png)
+
+![Image alt](https://github.com/remmi755/next-like-amazon/blob/main/next-like-amazon.vercel.app_%20(1).png)
+
+![Image alt](https://github.com/remmi755/next-like-amazon/blob/main/next-like-amazon.vercel.app_%20(2).png)
+
+
+
 # Build Full-ECommerce By Next.js 13+, App Router, Server Components and Actions
 
 |                |                                                        |

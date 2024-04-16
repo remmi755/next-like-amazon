@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 export default async function Home() {
   const featuredProducts = await productService.getFeatured();
   const latestProducts = await productService.getLatest();
+
   return (
     <>
       <div className="w-full carousel rounded-box mt-4">
